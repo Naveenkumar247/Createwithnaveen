@@ -995,4 +995,53 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
      left:-350px;
    }
  }
+     /* For large screens above 1024px */
+@media (min-width: 1024px) {
+  .container {
+    width: 90%; /* Fluid layout */
+    max-width: 1200px; /* Prevents overflow on larger screens */
+    margin: auto;
+  }
+
+  .card {
+    width: 30%;  /* Make sure cards don't stretch too wide */
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%; /* Keeps images inside the container */
+    height: auto;
+  }
+}
+     /* For screens larger than 1024px */
+@media (min-width: 1024px) {
+  .container {
+    width: 90%;          /* Adjust container width */
+    max-width: 1200px;   /* Limit the width to 1200px to prevent stretching */
+    margin: auto;        /* Center the content */
+  }
+
+  .navbar {
+    display: flex;       /* Align nav items */
+    justify-content: space-between;
+  }
+
+  /* If using Flexbox or Grid */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Large text and headings */
+  h1, h2 {
+    font-size: 2rem;     /* Adjust font size for bigger screens */
+  }
+
+  /* Large images */
+  img {
+    width: 100%;         /* Ensure images adjust to container size */
+    height: auto;
+  }
+}
 </style>
