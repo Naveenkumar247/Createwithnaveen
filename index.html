@@ -15,7 +15,7 @@
 <div id=address>
 <img src=naveen.png>
 <a href="https://www.instagram.com/createwithnaveen?igsh=MWV1dXhldXl6cnpkZw==" target="_blank">
-  <i class="fab fa-instagram" style="font-size: 90px; color: #E4405F;"></i><h3>@createwithnaveen</h3>
+  <i class="fab fa-instagram" id=instagram style="font-size: 90px; color: #E4405F;"></i><h3>@createwithnaveen</h3>
 </a><br>
 <a href="https://www.linkedin.com/in/createwithnaveen?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
   <i class="fab fa-linkedin" style="font-size: 90px; color: #0077B5;"></i>
@@ -45,14 +45,13 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
  </div>
  
  <div class=works>
- <h1>What we provide</h3>
+ <h1>What we provide</h1>
  <h5>Most skilled works with fair policy</h5>
- </div> 
-  <div class=gridcontainer>
- <div class=problem>
+ </div>
+ <div class=gridcontainer>
  <div class=box1>
-   <h3>Web development</h2>
-   <p>we provide staicwebsite for the people who intrested to make portofolio and representing webpage for the business and additionally we provide 1 year domain subscription </p>
+   <p><h3>Web development</h3>
+   we provide staicwebsite for the people who intrested to make portofolio and representing webpage for the business and additionally we provide 1 year domain subscription </p>
  </div>
  <div class=box2>
    <h3>Social media marketing</h3>
@@ -67,7 +66,7 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
    <p>Having the customized logo is the most important brand identity for the business most of the top companies will consequently upgrade their logo due to trends</p>
  </div>
  </div>
-  </div>
+ <div id=reconstruction>
  <hr class=hr1>
  <div class=Webdevelopment id=pw1>
     <h1>Webdevelopment</h1>
@@ -160,7 +159,7 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
       <p>Logo designing is the foundation of your brand identity. We design unique, memorable logos that represent your brand’s values and personality. A strong logo builds trust, enhances brand recall, and sets you apart from the competition, making a powerful first impression.</p>
    </div>
    <hr class=hr6>
-
+   </div>
    
    
 <div class="review">
@@ -237,9 +236,8 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
 </body>
 <style>
 .gridcontainer{
-  position:relative;
-  display:grid;
-  column-gap:30px;
+  position: relative ;
+  display: flex;
 }
 #address{
   position: absolute ;
@@ -262,11 +260,6 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
   position: relative;
   top:90px;
   left:150px;
-}
-.problem{
-  position:relative;
-  display:flex;
-  column-gap:30px;
 }
 .address{
   position: relative;
@@ -868,11 +861,7 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
      scale:0.9
    }
    
-   .problem{
-     position:relative;
-     display:grid;
-     row-gap:50px;
-   }
+   
    .works{
      position:relative;
      scale:0.7;
@@ -902,6 +891,8 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
    .gridcontainer{
     row-gap:50px;
     margin-left:90px;
+    position: relative ;
+    display:flex;
    }
    .Webdevelopment{
      right:40px;
@@ -995,53 +986,192 @@ Partner with CreatewithNaveen to turn your vision into reality, with solutions c
      left:-350px;
    }
  }
-     /* For large screens above 1024px */
-@media (min-width: 1024px) {
-  .container {
-    width: 90%; /* Fluid layout */
-    max-width: 1200px; /* Prevents overflow on larger screens */
-    margin: auto;
+   /* For screens larger than 1024px */
+@media (min-width: 1200px) {
+  .leaf{
+    position: relative;
+    left:250%;
+    width:100%;
+    height:100%;
+  }
+  .gridcontainer{
+    position:relative;
+    left:50%;
+  }
+  .navbarcontainer{
+    width:150%;
+    height:7%;
+  }
+  .title{
+    font-size:300%;
+    top:50%;
+  }
+  .aboutus2{
+    position:relative;
+    margin:0px;
+    top:-500px;
+    left:800%;
+    animation:none;
+    width:250%;
+    font-size:150%;
+    margin-left:40%;
+    
+  }
+  .works{
+    position: relative;
+    font-size: 300%;
+    bottom:300px;
+    left:30%;
+  }
+  .gridcontainer{
+    position:relative;
+    display:flex;
+    left:25%;
+    flex-wrap:wrap;
+    columns:4fr;
+    width:100%;
+    font-size:200%;
+    bottom:250px;
+    grid-template-columns: repeat(4,1fr);
+    column-gap:4%;
+  }
+  .gridcontainer h3{
+    position: relative ;
+    text-align: center;
+  }
+  .gridcontainer p{
+    position: relative;
+    text-align: center;
+  }
+  .box1,.box2,.box3,.box4{
+    position: relative;
+    display:flex;
+    width:55%;
+    min-height:300%;
+    flex-grow:1;
+    flex:1;
+  }
+   .hr1,.hi3,.hr2,.hr3,.hr5{
+    position: relative ;
+    width:150%;
+    
+  }
+  .hr1{
+    position:relative;
+    bottom:150px;
+  }
+  #pw1 h1{
+    position: relative;
+    width:200%;
+    font-size:500%;
+    left:20%;
+  }
+  #pw1 p{
+    position: relative;
+    width:300%;
+    font-size:300%;
+    height:250%;
+    left:20%;
+  }
+  #ps2 p{
+    position: relative;
+    width:300%;
+    font-size:300%;
+    height:250%;
+    left:100%;
+  }
+  #pp1 p{
+    position: relative;
+    width:300%;
+    font-size:300%;
+    height:250%;
+    left:20%;
   }
 
-  .card {
-    width: 30%;  /* Make sure cards don't stretch too wide */
-    margin-bottom: 20px;
+  #ps2 h1{
+    position: relative;
+    width:200%;
+    font-size:500%;
+    left:100%;
+  }
+    #pp1 h1{
+    position: relative;
+    width:200%;
+    font-size:500%;
+    left:20%;
+  }
+    #pc2 h1{
+    position: relative;
+    width:200%;
+    font-size:500%;
+    left:100%;
+  }
+    #pl1 h1{
+    position: relative;
+    width:200%;
+    font-size:500%;
+    left:20%;
+  }
+  
+  #pl1 p{
+    position: relative;
+    width:300%;
+    font-size:300%;
+    height:250%;
+    left:20%;
+  }
+  #pc2 p{
+    position: relative;
+    width:300%;
+    font-size:300%;
+    height:250%;
+    left:100%;
+  }
+  .webgrid{
+    position: relative;
+    column-gap:5%;
+    scale:200%;
+    left:70%;
+  }
+  .media {
+    position: relative;
+    scale:200%;
+    top:-100px;
+    left:20%;
+  }
+  .webgrid2{
+    position: relative;
+    column-gap:5%;
+    scale:200%;
+    left:100%;
+    top:-350px;
+  }
+  .contentimg{
+    position: relative;
+    scale:200%;
+    top:-1100px;
+    left:20%;
+  }
+  .logo{
+    position: relative;
+    scale:200%;
+    left:80%;
+    top:-2100px;
+  }
+  .review{
+    scale:250%;
+    top:-1700px;
+  }
+  #address{
+    position: absolute;
+    scale:60%;
+    top:7000px;
+    left:40%;
   }
 
-  img {
-    width: 100%; /* Keeps images inside the container */
-    height: auto;
+  #instagram{
+    position: relative;
+    left:5000%;
   }
-}
-     /* For screens larger than 1024px */
-@media (min-width: 1024px) {
-  .container {
-    width: 90%;          /* Adjust container width */
-    max-width: 1200px;   /* Limit the width to 1200px to prevent stretching */
-    margin: auto;        /* Center the content */
-  }
-
-  .navbar {
-    display: flex;       /* Align nav items */
-    justify-content: space-between;
-  }
-
-  /* If using Flexbox or Grid */
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  /* Large text and headings */
-  h1, h2 {
-    font-size: 2rem;     /* Adjust font size for bigger screens */
-  }
-
-  /* Large images */
-  img {
-    width: 100%;         /* Ensure images adjust to container size */
-    height: auto;
-  }
-}
+ }
 </style>
